@@ -1,0 +1,63 @@
+
+header
+{
+   
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #423940;
+    padding: 0px 15px;
+    z-index: 10px;
+}
+
+header .row
+{
+    justify-content: space-between;
+    align-items: center;
+}
+header .brandname a
+{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+}
+header .brandname a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+header .navbar ul{
+list-style: none;
+padding: 0;
+
+}
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 72px;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    position: relative;
+}
+header .navbar ul li a.active::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+}
